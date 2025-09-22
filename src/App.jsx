@@ -1,13 +1,20 @@
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
+import Login from "./pages/login";
+import Main from "./pages/main";
+import Detail from "./pages/detail";
+
 function App() {
-
   return (
-      <div className="text-center p-10">
-        <h1 className="text-3xl font-bold text-blue-500">
-        Hello!
-
-        </h1>
-      </div>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        
+        <Route path="/login" element={<Login />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/detail/:id" element={<Detail />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
