@@ -46,7 +46,7 @@ export default function Main() {
           <li
             key={user.id}
             onClick={() => navigate(`/detail/${user.id}`)}
-            className="p-4 border rounded-lg shadow-sm hover:shadow-md hover:bg-green-50 cursor-pointer transition"
+            className="p-4 border rounded-lg shadow-sm hover:shadow-md bg-gray-100 hover:bg-green-50 cursor-pointer transition"
           >
             <p className="font-semibold text-lg text-gray-800">{user.name}</p>
             <p className="text-sm text-gray-600">Username: {user.username}</p>

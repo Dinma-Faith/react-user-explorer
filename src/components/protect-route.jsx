@@ -1,6 +1,6 @@
 import { Navigate } from "react-router-dom";
 
-function ProtectRoute({ children }) {
+function ProtectedRoute({ children }) {
   const isAuth = localStorage.getItem("auth");
 
   if (!isAuth) {
@@ -10,4 +10,4 @@ function ProtectRoute({ children }) {
   return children;
 }
 
-export default ProtectRoute;
+export default ProtectedRoute;
