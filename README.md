@@ -6,7 +6,7 @@ A simple React app that allows users to log in with a mock phone number, view a 
 
 ## 🚀 Live Demo
 
-👉 [View Live Demo](https://your-live-link-here.com)
+👉 [View Live Demo](https://react-users-explorer.netlify.app/)
 
 ---
 
