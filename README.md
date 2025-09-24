@@ -1,12 +1,80 @@
-# React + Vite
+# React User Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that allows users to log in with a mock phone number, view a list of users fetched from the **JSONPlaceholder API**, search through them, and see detailed information on each user.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+👉 [View Live Demo](https://your-live-link-here.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Features
+
+* 🔑 Mock login validation with phone number
+* 👥 Fetch users from JSONPlaceholder API
+* 🔍 Dynamic search functionality on the main page
+* 📄 Detail page with complete user info
+* 🛡️ Protected routes (requires login)
+* 🎨 Responsive UI with TailwindCSS
+* ✅ Basic unit testing with Jest/React Testing Library and Vitest
+
+---
+
+## 🗂️ Project Structure
+
+```
+src/
+  components/     # Reusable UI components (Button, Input, ProtectedRoute)
+  pages/          # App pages (Login, Main, Detail)
+  services/       # API calls
+  hooks/          # Custom hooks (useFetch)
+```
+
+---
+
+## ▶️ Getting Started
+
+### Clone the repo
+
+```bash
+git clone https://github.com/<your-username>/react-user-explorer.git
+cd react-user-explorer
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run the app
+
+```bash
+npm run dev
+```
+
+### Run tests
+
+You can run tests using **Jest** or **Vitest**:
+
+```bash
+# Jest
+npm test
+
+# Vitest
+npx vitest
+```
+
+---
+
+## 🛠️ Tech Stack
+
+* **React** (Vite)
+* **Tailwind CSS**
+* **React Router DOM**
+* **Jest & React Testing Library** / **Vitest**
+* **JSONPlaceholder API**
+
+---
